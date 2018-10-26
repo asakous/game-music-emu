@@ -11,8 +11,6 @@ set(GME_VERSION 0.6.1 CACHE INTERNAL "libgme Version")
 # down the requirement, but I can't test that.
 cmake_minimum_required(VERSION 2.8.7 FATAL_ERROR)
 
-make_release_only()
-
 # I don't plan on debugging this, so make it a release build.
 if( NOT CMAKE_BUILD_TYPE MATCHES "Release" )
 	set( CMAKE_BUILD_TYPE "RelWithDebInfo" )
